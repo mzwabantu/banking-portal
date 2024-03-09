@@ -1,0 +1,58 @@
+<%- include('header', {
+  title: "Tranfer Funds", 
+  description: "Make eezy transactions by transfering funds fron one account to another"
+}) %>
+
+<div class="container" style="margin-top: -100px;">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+
+      <div class="card p-2 p-md-5">
+        <div class="card-body">
+          <% if (locals.message) { %>
+            <div class="alert alert-success" id="msg" role="alert"><%= message %></div>
+          <% } %>
+          <div class="alert alert-danger error" role="alert"></div>
+
+          <form id="transferForm" action="/services/transfer" method="post">
+            <div class="row align-items-end">
+
+              <div class="col-md-6 mb-3">
+                <label for="from" class="form-label text-secondary">From </label>
+                <select  name="from" id="from"  class="form-select" required>
+                  <option selected>Select from account</option>
+                  <option value="checking">Checking</option>
+                  <option value="savings">Savings</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="to" class="form-label text-secondary">To </label>
+                <select  name="to" id="to"  class="form-select" required>
+                  <option selected>Select to account</option>
+                  <option value="savings">Savings</option>
+                  <option value="checking">Checking</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="amount" class="form-label text-secondary">Amount </label>
+                <input type="number" name="amount" id="amount" required placeholder="amount" step="0.01" class="form-control">
+              </div>
+
+              <div class="col-md-6 text-end">
+                <button type="submit" class="btn btn-dark btn-md w-100 text-uppercase">Transfer</button>
+              </div>
+            </div>          
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/transfer.js"></script>
+
+<%- include('footer') %>
+

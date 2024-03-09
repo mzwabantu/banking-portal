@@ -1,0 +1,28 @@
+<%- include('header', {
+    title: "Profile", 
+    description: ""
+  }) %>
+  
+  <div class="container" style="margin-top: -100px;">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+  
+        <div class="card">
+            <div class="card-header py-3 px-2 px-lg-4 bg-dark text-white fs-4"><i class="bi bi-person-fill me-2"></i> <span class="fw-bold"><%=user.name%></span></div>
+            <div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item py-3 px-2 px-lg-4"><i class="bi bi-person-fill me-2"></i><%=user.username%></li>
+                    <li class="list-group-item py-3 px-2 px-lg-4"><i class="bi bi-envelope-fill me-2"></i> <%=user.email%></li>
+                    <li class="list-group-item py-3 px-2 px-lg-4"><i class="bi bi-telephone-fill me-2"></i> <%=user.phone%></li>
+                    <li class="list-group-item py-3 px-2 px-lg-4"><i class="bi bi-geo-alt-fill me-2"></i> <%=user.address%></li>
+                </ul>
+            </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <%- include('footer') %>
+  
+  

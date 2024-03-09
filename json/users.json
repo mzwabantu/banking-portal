@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Nicholas Bin Lavenoff",
+    "username": "nick",
+    "phone": "801-555-0101",
+    "email": "nickbinlavenoff@gmail.com",
+    "address": "1212 PS Circle, Project, Learning, 55555"
+  },
+  {
+    "name": "Zs User",
+    "username": "psuser",
+    "phone": "801-555-0101",
+    "email": "psuser@example.com",
+    "address": "1212 PS Circle, Project, Learning, 55555"
+  }
+]

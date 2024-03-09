@@ -1,0 +1,16 @@
+<div class="cd-grid fw-bold p-3">
+  <div>Date</div>
+  <div>Type</div>
+  <div>Description</div>
+  <div>Status</div>
+  <div>Amount</div>
+</div>
+<% account.transactions.forEach( transaction => { %>
+  <div class="cd-grid p-3 rounded shadow mb-1 bg-white fs-6">
+    <div><%= transaction.date %></div>
+    <div><%= transaction.type %></div>
+    <div><%= transaction.description %></div>
+    <div class="text-capitalize"><%= transaction.status %></div>
+    <div>$<%= transaction.amount %></div>
+  </div>
+<% }); %>

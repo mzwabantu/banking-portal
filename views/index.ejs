@@ -1,0 +1,29 @@
+<%- include('header', {
+  title: title, 
+  description: "Welcome back, ezeely access all your accounts with just a click of a button with ezeeBank."
+}) %>
+
+<div class="container text-white" style="margin-top: -100px;">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      <div class="row">
+        <div class="col-4"><%- include('summary', { account: accounts.checking }) %></div>
+        <div class="col-4"><%- include('summary', { account: accounts.savings }) %></div>
+        <div class="col-4"><%- include('summary', { account: accounts.credit }) %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center py-5">
+  <a href='/services/transfer' class="btn btn-warning btn-lg fs-5 text-uppercase" style="min-width: 320px;" type="button">Transfer</a>
+</div>
+
+<div class="position-absolute bottom-0 left-0 w-100">
+  <footer class="container d-flex align-items-center justify-content-between py-2 mt-4">
+          <div></div>
+          <div class="text-secondary">© 2023 </div>
+      </div>
+  </footer>
+</body>
+</html>

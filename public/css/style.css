@@ -1,0 +1,76 @@
+:root { 
+  --bg-checking: linear-gradient(75deg, #74470a 0.42%, rgb(152, 146, 107) 47.9%, #897867 99.16%);
+  --bg-savings: linear-gradient(to top right, #b3ad97, rgb(252, 252, 252) 47.48%, #7d5ca7 99.58%);;
+  --bg-credit: linear-gradient(75deg, #241f3f 0.42%, rgb(4, 13, 30) 47.48%, #526263 99.58%);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+
+.nav-link img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-left: 1.255rem;
+  box-shadow: 0 0 0 4px #373737;
+}
+
+.bg-body-secondary { 
+  background-color: rgba(21, 26, 31, 1)!important; 
+  background-image: linear-gradient(160deg, #151a1f, #32043a) !important;
+  }
+footer { border-top: 1px solid  #434343 !important; }
+.fs-6 { font-size: 12px !important; }
+
+.col-4:nth-child(1) .card {
+  background-image: linear-gradient(75deg, #74470a 0.42%, rgb(152, 146, 107) 47.9%, #897867 99.16%);
+  border: #ffce1b;
+  color: white;
+}
+.col-4:nth-child(1) .card .text-secondary, .Checking .fs-5 { color: rgb(217, 210, 188)!important;}
+.col-4:nth-child(1) .card .text-warning { color: rgb(255, 255, 245)!important;}
+
+.col-4:nth-child(2) .card {
+  background-image: linear-gradient(to top right, #b3ad97, rgb(252, 252, 252) 47.48%, #7d5ca7 99.58%);
+  border: #ffffff;
+}
+.col-4:nth-child(2) .card .text-secondary , .Savings .fs-5{ color: rgba(31, 35, 40, 1)!important;}
+.col-4:nth-child(2) .card .text-warning, .Savings h1 { color:rgba(56, 43, 74, 1)!important}
+
+.col-4:nth-child(3) .card {
+  background-image: linear-gradient(75deg, #241f3f 0.42%, rgb(4, 13, 30) 47.48%, #526263 99.58%);
+  border: #baa1ff;
+  color: rgb(176, 176, 176);
+}
+.col-4:nth-child(3) .card .text-secondary { color: rgb(216, 216, 216)!important; }
+.col-4:nth-child(3) .card .text-warning { color: rgba(212, 232, 236, 1)!important }
+.col-4 {
+  perspective: 1000px;
+}
+
+.col-4 .card { box-shadow: 4px 12px 32px rgba(0,0,0, .35); }
+a.card { text-decoration: none !important; transition: 0.3s ease-in-out;}
+a.card { transform: rotate(0deg); }
+
+.col-4:hover .card {
+  transform: rotateY(15deg) scale(1.05)
+}
+
+.cd-grid {
+  display: grid;
+  grid-template-columns: 20% 15% 35% 15% 15%;
+  transition: all 0.2555s ease-in-out;
+}
+.cd-grid.rounded:hover {
+  transform: scale(1.01);
+}
+.Checking { background-image: var(--bg-checking) !important;}
+.Savings { background-image: var(--bg-savings) !important;}
+.Credit, .Payment { background-image: var(--bg-credit) !important;}
+
+

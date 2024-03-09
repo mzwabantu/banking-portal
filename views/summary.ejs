@@ -1,0 +1,27 @@
+<a href="/account/<%= account.unique_name %>" class="card <%= accounts.nickname %>">
+  <div class="card-body py-4">
+    <div class="d-flex justify-content-between w-100">
+      <h1 class="fs-5 mb-3 text-uppercase fw-normal"><%= account.nickname %></h1>
+      <div class="text-end"> 
+        <div class="fs-6 text-secondary">
+          <% if (account.unique_name == 'credit') { %>Available Balance
+          <% } else { %>Prior Balance <% } %>
+          </div>
+        <div class="fs-5 fw-medium text-secondary">
+          <% if (account.unique_name == 'credit') { %>
+            $<%= account.available %>
+          <% } else { %>
+            $<%= account.prior_balance %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+      <div>
+        <div class="fs-6 text-secondary">Current Balance</div>
+        <div class="display-4 fs-2 fw-bold text-warning">$<%= account.balance %></div>
+      </div>
+      
+      <div class="text-end fs-5 fw-medium"><%= account.account_number %></div>
+  </div>
+</a>

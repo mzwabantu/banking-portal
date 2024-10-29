@@ -5,9 +5,9 @@
   account details, transactions and make payments.` }) %>
 
   <div class="container h-100 flex-grow-1" style="margin-top: -100px">
-    <div class="row px-4 px-lg-0">
+    <div class="row px-2 px-sm-4 px-lg-0">
       <div class="col-lg-10 mx-auto">
-        <div class="card p-3 bg-light">
+        <div class="card px-2 px-sm-3 py-3 bg-light">
           <%- include('transactions',{account:account}); %> <% if
           (account.unique_name == 'credit' && account.balance > 0) { %>
           <div class="col-12 my-2">

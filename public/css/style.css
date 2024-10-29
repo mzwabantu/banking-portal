@@ -134,6 +134,17 @@ a.card {
   grid-template-columns: 20% 15% 35% 15% 15%;
   transition: all 0.2555s ease-in-out;
 }
+
+@media screen and (max-width: 767px) {
+  .table-header {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .table-header {
+    font-size: 12px !important;
+  }
+}
 .cd-grid.rounded:hover {
   transform: scale(1.01);
 }
